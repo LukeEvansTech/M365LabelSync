@@ -1,0 +1,9 @@
+# Zensical docs build output
+docs/site/
+.zensical/
+
+# macOS
+.DS_Store
+
+# Export data (contains tenant-specific data)
+export/

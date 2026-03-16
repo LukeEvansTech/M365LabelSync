@@ -1,0 +1,11 @@
+{
+  "name": "m365labelsync-docs",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "start": "zensical serve",
+    "serve": "zensical serve",
+    "build": "zensical build",
+    "clean": "zensical build --clean"
+  }
+}
