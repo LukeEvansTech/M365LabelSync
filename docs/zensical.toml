@@ -1,0 +1,75 @@
+[project]
+site_name = "M365LabelSync"
+site_description = "Export and import M365 sensitivity labels between tenants"
+site_author = "Luke Evans"
+site_url = "https://lukeevansTech.github.io/M365LabelSync/"
+copyright = "Copyright &copy; 2026 Luke Evans"
+docs_dir = "docs"
+site_dir = "site"
+dev_addr = "127.0.0.1:8000"
+extra_css = ["assets/stylesheets/custom.css"]
+repo_url = "https://github.com/LukeEvansTech/M365LabelSync"
+repo_name = "LukeEvansTech/M365LabelSync"
+edit_uri = "edit/main/docs/docs/"
+
+[project.theme]
+name = "material"
+variant = "modern"
+language = "en"
+
+[project.theme.icon]
+repo = "fontawesome/brands/github"
+
+[[project.theme.palette]]
+scheme = "default"
+primary = "indigo"
+accent = "indigo"
+toggle_icon = "material/brightness-7"
+toggle_name = "Switch to dark mode"
+
+[[project.theme.palette]]
+scheme = "slate"
+primary = "indigo"
+accent = "indigo"
+toggle_icon = "material/brightness-4"
+toggle_name = "Switch to light mode"
+
+[[nav]]
+Home = "index.md"
+
+[[nav]]
+"Getting Started" = [
+  { "Prerequisites" = "prerequisites.md" },
+  { "Quick Start" = "quickstart.md" },
+]
+
+[[nav]]
+Reference = [
+  { "Export-Labels" = "export-labels.md" },
+  { "Import-Labels" = "import-labels.md" },
+  { "LabelHelpers Module" = "label-helpers.md" },
+]
+
+[[nav]]
+"Design" = [
+  { "Architecture" = "architecture.md" },
+  { "Cross-Tenant Caveats" = "caveats.md" },
+]
+
+[[nav]]
+Changelog = "changelog.md"
+
+[markdown_extensions]
+admonition = true
+
+[markdown_extensions.toc]
+permalink = true
+
+[markdown_extensions."pymdownx.highlight"]
+anchor_linenums = true
+
+[markdown_extensions."pymdownx.inlinehilite"]
+
+[markdown_extensions."pymdownx.snippets"]
+
+[markdown_extensions."pymdownx.superfences"]
