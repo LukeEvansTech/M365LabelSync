@@ -2,6 +2,8 @@
 
 Export and import sensitivity labels and label policies between Microsoft 365 tenants using Security & Compliance PowerShell.
 
+**[Documentation](https://lukeevansTech.github.io/M365LabelSync/)**
+
 ## Prerequisites
 
 - **PowerShell 7+**
