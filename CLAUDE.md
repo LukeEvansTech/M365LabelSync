@@ -7,7 +7,7 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 **M365LabelSync** — a small PowerShell tool for exporting sensitivity labels and label policies from one Microsoft 365 tenant and importing them into another, via the Security & Compliance (`Connect-IPPSSession`) PowerShell surface.
 
 Public docs: <https://lukeevansTech.github.io/M365LabelSync/>
-Repo: <https://github.com/LukeEvansTech/M365LabelSync>
+Repository: <https://github.com/LukeEvansTech/M365LabelSync>
 
 The full user-facing reference is in `README.md`. This file captures the _why_ and non-obvious internals that aren't derivable by reading the scripts.
 
@@ -30,7 +30,7 @@ Three files do the work: `Export-Labels.ps1` dumps labels and policies to JSON; 
 
 - **Encryption / RMS is tenant-specific.** Labels with encryption are flagged during export. Default recommendation: first-pass import with `-SkipEncryption`, then re-apply encryption settings in the target tenant once RMS templates are in place.
 - **User/group scoping on policies does not port.** GUIDs differ between tenants. The export logs the scoping for manual remapping in the Purview portal; the import does not attempt to remap automatically.
-- **Auto-labelling conditions are not currently exported or imported.** Flagged in README as a possible future addition.
+- **Auto-labelling conditions are not currently exported or imported.** Flagged in `README.md` as a possible future addition.
 - **Policy sync delay** — allow up to 24 hours after import for policies to propagate across M365 services.
 
 ## Testing / verification
